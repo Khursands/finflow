@@ -1,0 +1,34 @@
+# ── Dependencies ──────────────────────────────────────────────
+node_modules/
+
+# ── Environment files — NEVER commit real secrets ─────────────
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.local.example
+
+# ── Build outputs ─────────────────────────────────────────────
+.next/
+dist/
+build/
+out/
+
+# ── RSA key pair (generated at runtime, must stay private) ────
+server/.keys/
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ── OS files ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editor ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── TypeScript ────────────────────────────────────────────────
+*.tsbuildinfo
