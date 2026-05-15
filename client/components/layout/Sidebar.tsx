@@ -8,7 +8,6 @@ import {
   Target,
   CreditCard,
   LogOut,
-  TrendingUp,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useLogout } from '@/hooks/useAuth';
@@ -27,13 +26,17 @@ export default function Sidebar() {
   return (
     <aside className="w-60 flex-shrink-0 bg-slate-900 flex flex-col min-h-screen">
       <div className="px-5 py-6 border-b border-slate-800">
-        <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-indigo-500 flex items-center justify-center flex-shrink-0">
-            <TrendingUp size={16} className="text-white" />
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center"
+            style={{ background: 'linear-gradient(135deg, #818cf8 0%, #4f46e5 100%)' }}>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="3,17 7,12 11,14 16,8 21,5" stroke="white" strokeWidth="2.2"/>
+              <circle cx="21" cy="5" r="1.5" fill="white"/>
+            </svg>
           </div>
           <div>
-            <span className="text-white font-bold text-base leading-none">FinFlow</span>
-            <p className="text-slate-500 text-xs mt-0.5">Finance Tracker</p>
+            <span className="text-white font-bold text-[15px] leading-none tracking-tight">FinFlow</span>
+            <p className="text-slate-500 text-[11px] mt-0.5 tracking-wide uppercase">Finance Tracker</p>
           </div>
         </div>
       </div>
