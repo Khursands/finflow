@@ -1,0 +1,17 @@
+{
+  "name": "finflow-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright end-to-end test suite for the FinFlow personal finance tracker",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen http://localhost:3000"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.16.0"
+  }
+}
